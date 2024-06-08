@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+.header {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(236, 11, 11);
+  margin-top: 4px;
+}
+
+.search-bar {
+  width: 500px;
+  padding: 8px;
+  margin: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.register-button {
+  padding: 10px 20px;
+  background-color: white;
+  color: red;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.book-list {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book-list img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.book-info h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.book-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.register-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.register-form {
+  max-width: 600px; 
+  padding: 50px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register-form input {
+  width: 100%;  
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  background-color: aqua;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
